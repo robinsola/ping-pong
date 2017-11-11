@@ -5,9 +5,27 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery3.2.1.js"></script>
     <script src="js/script.js"></script>
-    <title>Ping-Pong | A Numbers Game</title>
+    <title>Ping-Pong!</title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Ping-Pong!</h1>
+        <h4>A Numbers Game</h4>
+      </div>
+        <h4>Okay, first check out these rules:</h4>
+        <p>Ping-Pong will count up to your number from 1 with the following exceptions:</p>
+        <ol>
+          <li>Numbers divisible by 3 become "PING!"</li>
+          <li>Numbers divisible by 5 become "PONG!"</li>
+          <li>Numbers divisible by 3 AND 5 become "PING-PONG!"</li>
+        </ol>
+        <form id="game">
+            <label for="number">Enter a number:</label>
+            <input id="number" class="form-control" type="text">
+            <br>
+            <button type="submit" class="btn btn-success">Let's Play!</button>
+        </form>
+    </div>
   </body>
 </html>
