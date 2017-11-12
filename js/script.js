@@ -30,8 +30,8 @@ $(document).ready(function() {
      }
     });
 
-    pongNums.map(function(pingPongNum) {
-      $("#result").append("<li>" + pingPongNum + "</li>");
+    pongNums.map(function(pongNum) {
+      $("#result").append("<li>" + pongNum + "</li>");
     });
 
     $("#game").hide();
