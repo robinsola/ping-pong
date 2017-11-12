@@ -1,19 +1,19 @@
 body {
   background-image: url(../img/beerpong.jpg);
-  background-color: black;
+  background-color: #000;
   background-repeat: no-repeat;
   background-position: 0 80px;
   background-size: 100% auto;
 }
 
 h1 {
-  color: white;
+  color: #FFF;
   letter-spacing: 30px;
   text-align: center;
 }
 
 h4, h6, p, li, label {
-  color: white;
+  color: #FFF;
 }
 
 .col-md-4 {
@@ -25,8 +25,4 @@ h4, h6, p, li, label {
 
 #output {
   display: none;
-}
-
-button #reload {
-  desplay: none;
 }
