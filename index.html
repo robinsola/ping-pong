@@ -8,29 +8,36 @@
     <title>Ping-Pong!</title>
   </head>
   <body>
+    <h1>Beer-Pong!</h1>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Ping-Pong!</h1>
-        <h4>A Numbers Game</h4>
-      </div>
-        <h4>Okay, first check out these rules:</h4>
-        <p>Ping-Pong will count up to your number from 1 with the following exceptions:</p>
-        <ol>
-          <li>Numbers divisible by 3 become "PING!"</li>
-          <li>Numbers divisible by 5 become "PONG!"</li>
-          <li>Numbers divisible by 3 AND 5 become "PING-PONG!"</li>
-        </ol>
-        <form id="game">
-          <div class="form-group">
-            <label for="number">Enter a number:</label>
-            <input id="number" type="text">
+      <div class="row">
+          <div class="col-md-4">
+            <h4>A Numbers Game</h4>
+            <h4>Okay, first check out these rules:</h4>
+            <p>Ping-Pong will count up to your number from 1 with the following exceptions:</p>
+            <ol>
+              <li>Numbers divisible by 3 become "PING!"</li>
+              <li>Numbers divisible by 5 become "PONG!"</li>
+              <li>Numbers divisible by 3 AND 5 become "PING-PONG!"</li>
+            </ol>
+            <div class="right-col">
+              <form id="game">
+                <div class="form-group">
+                  <label for="number">Enter a number:</label>
+                  <input id="number" type="text">
+                </div>
+                  <button type="submit" class="btn btn-success">Let's Play!</button>
+              </form>
+              <div id="output">
+                <ul id="result">
+                </ul>
+              </div>
+            </div>
           </div>
-            <button type="submit" class="btn btn-success">Let's Play!</button>
-        </form>
-        <div>
-          <ul id="result">
-          </ul>
+        <div class="col-md-8">
+
         </div>
+      </div>
     </div>
   </body>
 </html>
