@@ -31,10 +31,10 @@ This website application was created with HTML, CSS, Bootstrap, JavaScript, and 
 * It can replace numbers divisible by 15 with "BEER-PONG"
   * Example Input: 15
   * Example Output: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,"BEER-PONG!"]
-* It can replace numbers divisible by 5 with "BEER-PONG"
+* It can replace numbers divisible by 5 with "BEER"
   * Example Input: 5
   * Example Output: [1,2,3,4,"BEER!"]
-* It can replace numbers divisible by 3 with "BEER-PONG"
+* It can replace numbers divisible by 3 with "PONG"
   * Example Input: 3
   * Example Output: [1,2,"PONG!"]
 
