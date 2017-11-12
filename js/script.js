@@ -1,8 +1,11 @@
 // Business Logic
 
 var inputNums = [];
-var pingPongNums = [];
+var pongNums = [];
 
+function refreshPage() {
+  location.reload();
+}
 
 // User Logic
 
@@ -17,18 +20,22 @@ $(document).ready(function() {
 
     inputNums.map(function(inputNum) {
       if (inputNum % 15 === 0) {
-       pingPongNums.push("PING-PONG!");
+       pongNums.push("BEER-PONG!");
      } else if (inputNum % 5 === 0) {
-       pingPongNums.push("PONG!");
+       pongNums.push("BEER");
      } else if (inputNum % 3 === 0) {
-       pingPongNums.push("PING!");
+       pongNums.push("PONG");
      } else {
-       pingPongNums.push(inputNum);
+       pongNums.push(inputNum);
      }
     });
-    pingPongNums.map(function(pingPongNum) {
+
+    pongNums.map(function(pingPongNum) {
       $("#result").append("<li>" + pingPongNum + "</li>");
     });
+
+    $("#game").hide();
+    $("#output").show();
 
   });
 });

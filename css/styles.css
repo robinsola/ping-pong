@@ -2,23 +2,31 @@ body {
   background-image: url(../img/beerpong.jpg);
   background-color: black;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
   background-position: 0 80px;
   background-size: 100% auto;
 }
 
 h1 {
-  /*background-color: rgba(255, 255, 255, 0.3);*/
-  padding: 20px;
+  color: white;
+  letter-spacing: 30px;
   text-align: center;
 }
 
-h4, p, li {
+h4, h6, p, li, label {
   color: white;
 }
 
 .col-md-4 {
-  padding: 10px;
-  margin-left: 40px;
+  padding: 15px;
+  margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 8px 8px 8px black;
+}
+
+#output {
+  display: none;
+}
+
+button #reload {
+  desplay: none;
 }
