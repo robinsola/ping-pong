@@ -1,44 +1,42 @@
 // Business Logic
 
-var inputNums = [];
-var pongNums = [];
+var inputNums = function(input) {
+  var pongNums = [];
+  for (var i = 1; i <= input; i++) {
+    if (i % 15 === 0) {
+     pongNums.push("BEER-PONG! DRINK UP BRO!");
+    } else if (i % 5 === 0) {
+     pongNums.push("BEER");
+    } else if (i % 3 === 0) {
+     pongNums.push("PONG");
+    } else {
+     pongNums.push(i);
+    }
+  }
+  return pongNums;
+};
 
-// This is set to reload the form when button is clicked
+
+// User Logic
+
 
 function refreshPage() {
   location.reload();
 }
-
-// User Logic
 
 $(document).ready(function() {
   $("#game").submit(function(event) {
     event.preventDefault();
 
     var input = parseInt($("#number").val());
-
-    for (var i = 1; i <= input; i++) {
-      inputNums.push(i);
+    if (isNaN(input) || (input === " ") || (input <= 0)) {
+      alert("BUZZ KILL, BRO! Enter a positive number!")
+    } else {
+    var results = inputNums(input);
     }
 
-// conditions set and pushed into var pongNums
-
-    inputNums.map(function(inputNum) {
-      if (inputNum % 15 === 0) {
-       pongNums.push("BEER-PONG! DRINK UP BRO!");
-      } else if (inputNum % 5 === 0) {
-       pongNums.push("BEER");
-      } else if (inputNum % 3 === 0) {
-       pongNums.push("PONG");
-      } else {
-       pongNums.push(inputNum);
-      }
-    });
-
-// display pongNums as a list in index.html
-
-    pongNums.map(function(pongNum) {
-      $("#result").append("<li>" + pongNum + "</li>");
+    results.map(function(result) {
+      $("#result").append("<li>" + result + "</li>");
     });
 
     $("#game").hide();
